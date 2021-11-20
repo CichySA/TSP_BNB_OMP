@@ -14,3 +14,7 @@ find_package(OpenMP)
 if(OpenMP_CXX_FOUND)
 	target_link_libraries(TSP_BNB_OMP PUBLIC OpenMP::OpenMP_CXX)
 endif()
+
+find_package(Boost)
+include_directories(${Boost_INCLUDE_DIR})
+target_link_libraries(TSP_BNB_OMP LINK_PUBLIC ${Boost_LIBRARIES})

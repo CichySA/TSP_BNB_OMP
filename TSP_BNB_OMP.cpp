@@ -7,7 +7,6 @@
 #include <iostream>
 #include <fstream>
 #include "TSPSolution.h"
-
 using namespace std;
 int main()
 {
@@ -17,6 +16,8 @@ int main()
 	if (input_file.is_open()) {
 
 		solution.parse_file(input_file);
+		solution.heuristic_solve();
+		cout << solution.get_score(solution.get_solution());
 	}
 
 	return 0;
