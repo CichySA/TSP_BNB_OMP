@@ -6,7 +6,7 @@ cmake_minimum_required (VERSION 3.9)
 project ("TSP_BNB_OMP")
 
 # Add source to this project's executable.
-add_executable (TSP_BNB_OMP "TSP_BNB_OMP.cpp" "TSP_BNB_OMP.h" "TSPFileParser.cpp" "TSPFileParser.h" "TSPSolution.h")
+add_executable (TSP_BNB_OMP "TSP_BNB_OMP.cpp" "TSP_BNB_OMP.h" "TSPFileParser.cpp" "TSPFileParser.h" "TSPSolution.h" "BFSolver.hpp")
 
 # TODO: Add tests and install targets if needed.
 
